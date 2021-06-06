@@ -45,7 +45,7 @@ function Save () {
   results.map(result => {
     return (
 <Card style={{ width:'80rem' }}>
-  <Card.Img variant="top" src= { result.imageLink }/>
+  <Card.Img variant="top" src= { result.imageLinks}/>
   <Card.Body>
     <Card.Title>{ result.title }</Card.Title>
     <Card.Text> {result.authors }</Card.Text>
@@ -53,7 +53,7 @@ function Save () {
     <Card.Link target="_blank" href={result.previewLink}>More Information</Card.Link>
     <br></br>
     <Button variant="primary" 
-    //onClick={function(){deletebooks(result._id)}}
+    onClick={function(){deletebooks(result._id)}}
     >Delete</Button>
   </Card.Body>
 </Card>

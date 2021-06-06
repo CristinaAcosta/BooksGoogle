@@ -66,7 +66,7 @@ function Search () {
     }
         return (
 <Card style={{ width:'80rem' }}>
-  <Card.Img variant="top" src= { imageLink }/>
+  <Card.Img variant="top" src= { result.volumeInfo.imageLinks.thumbnail }/>
   <Card.Body>
     <Card.Title>{ result.volumeInfo.title }</Card.Title>
     <Card.Text> {result.volumeInfo.authors }</Card.Text>
