@@ -2,8 +2,8 @@
 
 ## Links:
 
-Repo: https://github.com/CristinaAcosta/BooksGoogle
-Deploy: https://cristinagooglebook.herokuapp.com/
+- Repo: https://github.com/CristinaAcosta/BooksGoogle
+- Deploy: https://cristinagooglebook.herokuapp.com/
 
 ## Description:
 
