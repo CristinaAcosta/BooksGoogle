@@ -6,6 +6,12 @@ const app = express()
 
 app.use(express.static('Clients/build'))
 app.use(express.json())
+app.use(express.static(path.join(Clients, 'public')));
+
+app.get('*', function(req, res) {
+  res.sendFile(path.join(Clients, 'public', 'index.html'));
+});
+
 const bookSchema = new Schema({
     title: String,
     authors:[{type: String}],
